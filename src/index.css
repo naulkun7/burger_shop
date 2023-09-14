@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Franklin:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  font-family: Jost, sans-serif;
+  /* Normalize Rem */
+  font-size: 62.5%;
+
+  /* Font */
+  --font-sans: 'Jost', sans-serif;
+  --font-banner: 'Montserrat', sans-serif;
+
+  /* Color */
+  --color-text: #000;
+  --color-subtext: #515050;
+  --color-btn: #EA4C44;
+  --color-btn-hover: #000;
+  --color-btn-text: #fff;
+  --color-grey: #7B7B7B;
+  --color-background: #191a1d;
+  --color-background-light: #fbf8f6;
+}
