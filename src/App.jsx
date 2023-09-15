@@ -1,8 +1,11 @@
 import React from "react"
 import "./index.css"
 
+// Import components
+import Header from "./components/header"
+
 function App() {
-  return <h1>HELLO</h1>
+  return <Header />
 }
 
 export default App

@@ -19,4 +19,27 @@
   --color-grey: #7B7B7B;
   --color-background: #191a1d;
   --color-background-light: #fbf8f6;
+
+  /* Font size */
+  --fs-small: 1.5rem;
+  --fs-medium: 2rem;
+  --fs-large: 2.5rem;
+  --fs-xlarge: 3rem;
+  --fs-heading: 4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1.6rem;
+  color: var(--color-text);
 }
