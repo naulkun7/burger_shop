@@ -1,5 +1,6 @@
 import React from "react"
 import css from "./index.module.scss"
+import { Link } from "react-router-dom"
 import logoImg from "../../assets/images/Jevelin_logo_dark.png"
 
 function index() {
@@ -7,21 +8,25 @@ function index() {
     <div id="header" className={css.header}>
       <img src={logoImg} alt="logo" />
       <div className={css.navbar}>
-        <div className={css.navbar__item}>
-          <a href="">Home</a>
-        </div>
-        <div className={css.navbar__item}>
-          <a href="">About</a>
-        </div>
-        <div className={css.navbar__item}>
-          <a href="">Offer</a>
-        </div>
-        <div className={css.navbar__item}>
-          <a href="">Menu</a>
-        </div>
-        <div className={css.navbar__item}>
-          <a href="">Contact</a>
-        </div>
+        <Link className={css.navbar__item} to="/">
+          Home
+        </Link>
+
+        <Link className={css.navbar__item} to="/">
+          About
+        </Link>
+
+        <Link className={css.navbar__item} to="/">
+          Offer
+        </Link>
+
+        <Link className={css.navbar__item} to="/">
+          Home
+        </Link>
+
+        <Link className={css.navbar__item} to="/">
+          Contact
+        </Link>
       </div>
     </div>
   )
