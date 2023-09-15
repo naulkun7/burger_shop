@@ -1,22 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 2rem 0;
-}
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &__item {
-    margin: 2rem;
-    font-weight: 600 !important;
-    font-size: var(--fs-small);
-    text-transform: uppercase;
+  &__logo {
+    font-family: "Mochiy Pop One", sans-serif;
+    font-size: var(--fs-heading);
     color: var(--color-text);
     text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    &__item {
+      margin: 2rem;
+      font-weight: 600 !important;
+      font-size: var(--fs-md);
+      text-transform: uppercase;
+      color: var(--color-text);
+      text-decoration: none;
+    }
   }
 }
