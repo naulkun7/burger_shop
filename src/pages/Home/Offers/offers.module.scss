@@ -1,0 +1,88 @@
+.offers {
+  padding: 0 20rem;
+  padding-top: 16rem !important;
+
+  &__title {
+    font-size: var(--fs-title);
+    font-weight: 700;
+    margin-bottom: 7rem;
+  }
+
+  &__content {
+    padding: 10rem;
+  }
+
+  &__left {
+    &__item {
+      width: 100%;
+      height: auto;
+
+      &__name {
+        font-size: var(--fs-xl);
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      &__nutritious {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &__stat {
+          padding: 0 1rem;
+          border: 1px solid var(--color-gray);
+          color: var(--color-gray);
+          border-radius: 1rem;
+          font-size: var(--fs-xs);
+        }
+      }
+
+      &__description {
+        font-size: var(--fs-sm);
+        font-weight: 400;
+        margin: 2rem 0;
+      }
+
+      &__bottom {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &__price {
+          font-size: var(--fs-xl);
+          font-weight: 700;
+        }
+      }
+
+      &__img {
+        display: inline-block;
+        width: 100%;
+        img {
+          max-width: 100%;
+          min-height: 0.1rem;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  &__right {
+  }
+}
+
+// Responsive
+@media (width < 1200px) {
+  .offers {
+    padding: 0 10rem;
+    padding-top: 16rem !important;
+  }
+}
+
+@media (width < 992px) {
+  .offers {
+    padding: 0;
+    padding-top: 16rem !important;
+  }
+}

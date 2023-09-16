@@ -1,8 +1,8 @@
 import React from "react"
-import css from "./index.module.scss"
+import css from "./header.module.scss"
 import { Link } from "react-router-dom"
 
-function index() {
+function header() {
   return (
     <div id="header" className={css.header}>
       <Link className={css.header__logo} to="/">
@@ -33,4 +33,4 @@ function index() {
   )
 }
 
-export default index
+export default header

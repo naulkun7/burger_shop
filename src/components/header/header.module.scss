@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -13,7 +13,7 @@
 
   &__logo {
     font-family: "Mochiy Pop One", sans-serif;
-    font-size: var(--fs-heading);
+    font-size: var(--fs-xxl);
     color: var(--color-text);
     text-decoration: none;
     text-transform: uppercase;
@@ -31,6 +31,7 @@
       font-size: var(--fs-md);
       text-transform: uppercase;
       color: var(--color-text);
+      font-family: var(--font-sans);
       text-decoration: none;
     }
   }
