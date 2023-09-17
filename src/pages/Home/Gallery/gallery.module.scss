@@ -1,0 +1,9 @@
+.gallery {
+  padding-top: 16rem;
+
+  &__image {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: auto;
+  }
+}

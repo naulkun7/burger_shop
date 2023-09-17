@@ -3,13 +3,14 @@ import React from "react"
 // Styles
 import css from "./offers.module.scss"
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline"
+import AddIcon from "@mui/icons-material/Add"
 
 // Data
 import Json from "../../../database/constant.json"
 
 // Layout
 import SplitScreen from "../../../components/layout/SplitScreen"
-import { Container } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 
 // Left and Right side of the SplitScreen
 const Left = () => {
@@ -22,9 +23,11 @@ const Left = () => {
               <a href="#" className="tag tag__red">
                 NEW IN TOWN
               </a>
-              <div className={css.offers__left__item__image}>
-                <img src={item.image} alt={item.name} />
-              </div>
+              <img
+                src={item.image}
+                alt={item.name}
+                className={css.offers__left__item__image}
+              ></img>
               <h5 className={css.offers__left__item__name}>{item.name}</h5>
               <div className={css.offers__left__item__nutritious}>
                 <span className={css.offers__left__item__nutritious__stat}>
@@ -61,7 +64,23 @@ const Right = () => {
   return (
     <Row>
       {Json.offers.slice(1).map((item, id) => (
-        <Col xs={12} md={6} key={id}></Col>
+        <Col xs={12} md={6} key={id}>
+          <div className={css.offers__right__item}>
+            <img
+              src={item.image}
+              alt={item.name}
+              className={css.offers__right__item__image}
+            />
+            <h5 className={css.offers__right__item__name}>{item.name}</h5>
+            <a href="#" className="button button__price">
+              ${item.price}
+            </a>
+            <a href="#" className="cart">
+              <AddIcon className="cart__icon" />
+              <span>Add to cart</span>
+            </a>
+          </div>
+        </Col>
       ))}
     </Row>
   )

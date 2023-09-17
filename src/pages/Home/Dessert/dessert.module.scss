@@ -1,0 +1,44 @@
+.dessert {
+  padding-top: 16rem;
+
+  &__title {
+    font-size: var(--fs-title);
+    margin-bottom: 5rem;
+    font-weight: 700;
+  }
+
+  &__item {
+    background-color: var(--color-background-light);
+    border-radius: 3rem;
+    overflow: hidden;
+    padding: 5rem 2rem;
+
+    &__image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    &__name {
+      font-size: var(--fs-xl);
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+
+    &__desc {
+      font-size: var(--fs-md);
+      margin-bottom: 2rem;
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__price {
+        font-size: var(--fs-md);
+        font-weight: 700;
+      }
+    }
+  }
+}

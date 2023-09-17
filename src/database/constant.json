@@ -17,7 +17,7 @@
       "id": "2",
       "name": "Juicy Beef Burger Meal",
       "price": "16",
-      "description": "A delicious ham sandwich, with cheese and tomato",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
       "image": "/images/burger5.jpg",
       "category": "Burger",
       "nutritious": {
@@ -30,7 +30,7 @@
       "id": "3",
       "name": "Choko Milkshake From Heaven",
       "price": "8",
-      "description": "A delicious ham sandwich, with cheese and tomato",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
       "image": "/images/drink1.jpg",
       "category": "Sandwiches",
       "nutritious": {
@@ -43,7 +43,7 @@
       "id": "4",
       "name": "Blueberry Waffles",
       "price": "4",
-      "description": "A delicious ham sandwich, with cheese and tomato",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
       "image": "/images/dessert5.jpg",
       "category": "Sandwiches",
       "nutritious": {
@@ -56,7 +56,7 @@
       "id": "5",
       "name": "Medium Portion of Fries",
       "price": "3",
-      "description": "A delicious ham sandwich, with cheese and tomato",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
       "image": "/images/fries.jpg",
       "category": "Fries",
       "nutritious": {
@@ -64,6 +64,66 @@
         "fat": "26g",
         "sugars": "34g"
       }
+    }
+  ],
+  "burger": [
+    {
+      "id": "1",
+      "name": "Juicy Burger",
+      "price": "14",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "image": "/images/burger1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Juicy Burger",
+      "price": "14",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "image": "/images/burger2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Juicy Burger",
+      "price": "14",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "image": "/images/burger3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Juicy Burger",
+      "price": "14",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "image": "/images/burger4.jpg"
+    }
+  ],
+  "dessert": [
+    {
+      "id": "1",
+      "name": "Strawberry Mix",
+      "price": "14",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "image": "/images/dessert1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Chocolate Mix",
+      "price": "14",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "image": "/images/dessert2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Apple Pie",
+      "price": "14",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "image": "/images/dessert3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Sunday Waffle",
+      "price": "14",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "image": "/images/dessert4.jpg"
     }
   ]
 }

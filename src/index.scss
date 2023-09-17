@@ -11,6 +11,7 @@
 
   /* Color */
   --color-text: #000;
+  --color-text-white: #fff;
   --color-subtext: #515050;
   --color-btn: #ea4c44;
   --color-btn-hover: #000;
@@ -31,6 +32,11 @@
   --fs-xl: 3rem;
   --fs-xxl: 4rem;
   --fs-title: 6rem;
+}
+
+::selection {
+  background-color: var(--color-red);
+  color: var(--color-text-white);
 }
 
 * {
@@ -55,6 +61,7 @@ body {
   display: flex;
   align-items: center;
 
+  width: fit-content;
   padding: 1rem 2rem;
   border-radius: 3rem;
   font-size: var(--fs-sm);
@@ -62,6 +69,15 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
+
+  &__price {
+    background-color: var(--color-btn);
+    border: 1px solid var(--color-btn);
+    color: var(--color-btn-text);
+    padding: 0 1rem;
+    font-weight: 700;
+    font-size: var(--fs-md);
+  }
 
   &__red {
     background-color: var(--color-btn);
@@ -97,6 +113,14 @@ body {
       color: var(--color-btn-hover);
     }
   }
+
+  &__trans {
+    background: transparent;
+    border: 1px solid var(--color-btn-text);
+    color: var(--color-btn-text);
+    padding: 1rem 4rem;
+    font-size: var(--fs-md);
+  }
 }
 /* End button */
 
@@ -118,5 +142,34 @@ body {
     background-color: var(--color-red);
     color: var(--color-white);
   }
+  &__banner {
+    background-color: var(--color-red);
+    border-radius: 0.8rem;
+    color: var(--color-white);
+    font-size: var(--fs-md);
+  }
 }
 /* End Tag */
+
+/* Add to cart */
+.cart {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  font-size: var(--fs-md);
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--color-text);
+
+  &__icon {
+    margin-right: 1rem;
+  }
+}
+/* HTML
+<a href="#" className="cart">
+  <AddIcon className="cart__icon" />
+  <span>Add to cart</span>
+</a> 
+*/
+
+/* End add to cart */
