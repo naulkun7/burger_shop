@@ -11,6 +11,7 @@
   flex-direction: column;
   padding: 2rem 0;
   background-color: var(--color-white);
+  z-index: 1000;
 
   &__logo {
     font-family: "Mochiy Pop One", sans-serif;
