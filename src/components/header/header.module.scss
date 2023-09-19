@@ -23,6 +23,10 @@
     color: var(--color-text);
     text-decoration: none;
     text-transform: uppercase;
+
+    &__bg {
+      color: var(--color-white);
+    }
   }
 
   &__navbar {
@@ -39,6 +43,26 @@
       color: var(--color-text);
       font-family: var(--font-sans);
       text-decoration: none;
+
+      &__bg {
+        color: var(--color-white);
+      }
+    }
+
+    &__btn {
+      padding: 5px;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      outline: none;
+      display: none;
+      color: var(--color-white);
+      opacity: 0;
+
+      &__open {
+        padding-right: 50px;
+        opacity: 1;
+      }
     }
   }
 }
