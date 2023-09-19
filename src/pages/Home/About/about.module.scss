@@ -2,11 +2,20 @@
   font-family: var(--font-sans);
   padding-top: 16rem !important;
 
+  &__left {
+    background: url(../../../assets/images/about-small.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+
   &__left img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 2rem;
   }
 
   &__right {

@@ -14,7 +14,7 @@ import aboutImg from "../../../assets/images/about.jpg"
 const Left = () => {
   return (
     <div className={css.about__left}>
-      <img src={aboutImg} alt="Burger Making" />
+      <img src={aboutImg} alt="Burger Making" loading="lazy" />
     </div>
   )
 }

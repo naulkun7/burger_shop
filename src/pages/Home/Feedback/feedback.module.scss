@@ -2,12 +2,21 @@
 
 .feedback {
   padding-top: 16rem !important;
-
-  &__image {
+  &__left {
+    background: url(../../../assets/images/feedback-small.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
     height: auto;
     border-radius: 2rem;
-    object-fit: cover;
+    overflow: hidden;
+
+    &__image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
   }
 
   &__content {

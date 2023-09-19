@@ -6,6 +6,7 @@ import Header from "./components/header/header.jsx"
 
 // Import Home sections
 import About from "./pages/Home/About/about.jsx"
+import Banner from "./pages/Home/Banner/banner.jsx"
 import Offers from "./pages/Home/Offers/offers.jsx"
 import Banner1 from "./pages/Home/Banner1/banner1.jsx"
 import Banner2 from "./pages/Home/Banner2/banner2.jsx"
@@ -19,6 +20,7 @@ function App() {
     <>
       <Header />
       <div className="page">
+        <Banner />
         <About />
         <Offers />
         <Banner1 />

@@ -37,7 +37,16 @@ const responsive = {
 
 // Left and Right side of the SplitScreen
 const Left = () => {
-  return <img src={image} alt="Burger Making" className={css.feedback__image} />
+  return (
+    <div className={css.feedback__left}>
+      <img
+        src={image}
+        alt="Burger Making"
+        className={css.feedback__left__image}
+        loading="lazy"
+      />
+    </div>
+  )
 }
 
 const Right = () => {

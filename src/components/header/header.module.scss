@@ -9,9 +9,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 0;
   background-color: var(--color-white);
+  padding: 2rem 0;
   z-index: 1000;
+
+  &__bg {
+    background-color: transparent;
+  }
 
   &__logo {
     font-family: "Mochiy Pop One", sans-serif;

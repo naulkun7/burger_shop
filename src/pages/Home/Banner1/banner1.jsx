@@ -9,11 +9,7 @@ import imgURL from "../../../assets/images/banner1.png"
 
 // Left and Right side of the SplitScreen
 const Left = () => {
-  return (
-    <div className={css.banner1__left}>
-      <img src={imgURL} alt="Banner 1" className={css.banner1__left__image} />
-    </div>
-  )
+  return <img src={imgURL} alt="Banner 1" className={css.banner1__image} />
 }
 
 const Right = () => {
