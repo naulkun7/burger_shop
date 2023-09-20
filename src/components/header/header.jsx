@@ -1,10 +1,9 @@
-import React, { useState, useRef } from "react"
+import React, { useState } from "react"
 import css from "./header.module.scss"
-import DehazeIcon from "@mui/icons-material/Dehaze"
-import CloseIcon from "@mui/icons-material/Close"
+import Hamburger from "hamburger-react"
 import { Link } from "react-router-dom"
 
-function header() {
+function Header() {
   // Change color
   const [color, setColor] = useState(false)
   const changeColor = () => {
@@ -16,10 +15,10 @@ function header() {
   }
   window.addEventListener("scroll", changeColor)
 
-  // responsive navbar
-  const navRef = useRef()
-  const showNavBar = () => {
-    navRef.current.classList.toggle(css.header__navbar__show)
+  // Hamburger
+  const [isOpen, setOpen] = useState(false)
+  const handleClick = () => {
+    setOpen(!isOpen)
   }
 
   return (
@@ -34,7 +33,6 @@ function header() {
             : `${css.header__logo} ${css.header__logo__bg}`
         }
         to="/"
-        onClick={showNavBar}
       >
         burger
       </Link>
@@ -46,11 +44,9 @@ function header() {
               : `${css.header__navbar__item} ${css.header__navbar__item__bg}`
           }
           to="/"
-          onClick={showNavBar}
         >
           Home
         </Link>
-
         <Link
           className={
             color
@@ -58,11 +54,9 @@ function header() {
               : `${css.header__navbar__item} ${css.header__navbar__item__bg}`
           }
           to="/"
-          onClick={showNavBar}
         >
           About
         </Link>
-
         <Link
           className={
             color
@@ -70,11 +64,9 @@ function header() {
               : `${css.header__navbar__item} ${css.header__navbar__item__bg}`
           }
           to="/"
-          onClick={showNavBar}
         >
           Offer
         </Link>
-
         <Link
           className={
             color
@@ -82,11 +74,9 @@ function header() {
               : `${css.header__navbar__item} ${css.header__navbar__item__bg}`
           }
           to="/"
-          onClick={showNavBar}
         >
           Home
         </Link>
-
         <Link
           className={
             color
@@ -94,24 +84,21 @@ function header() {
               : `${css.header__navbar__item} ${css.header__navbar__item__bg}`
           }
           to="/"
-          onClick={showNavBar}
         >
           Contact
         </Link>
-        <button onClick={showNavBar} className={css.header__navbar__btn}>
-          <CloseIcon />
+        <button
+          className={
+            color
+              ? css.header__navbar__btn
+              : `${css.header__navbar__btn} + ${css.header__navbar__btn__bg}`
+          }
+        >
+          <Hamburger toggled={isOpen} toggle={setOpen} />
         </button>
       </div>
-      <button
-        onClick={showNavBar}
-        className={
-          css.header__navbar__btn + " " + css.header__navbar__btn__open
-        }
-      >
-        <DehazeIcon />
-      </button>
     </div>
   )
 }
 
-export default header
+export default Header

@@ -2,7 +2,7 @@ import React from "react"
 import "./index.scss"
 
 // Import components
-import Header from "./components/header/header.jsx"
+import Header from "./components/header/Header.jsx"
 
 // Import Home sections
 import About from "./pages/Home/About/about.jsx"
@@ -19,17 +19,15 @@ function App() {
   return (
     <>
       <Header />
-      <div className="page">
-        <Banner />
-        <About />
-        <Offers />
-        <Banner1 />
-        <Banner2 />
-        <Trend />
-        <Dessert />
-        <Gallery />
-        <Feedback />
-      </div>
+      <Banner />
+      <About />
+      <Offers />
+      <Banner1 />
+      <Banner2 />
+      <Trend />
+      <Dessert />
+      <Gallery />
+      <Feedback />
     </>
   )
 }
