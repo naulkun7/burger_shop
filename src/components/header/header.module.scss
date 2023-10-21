@@ -3,14 +3,14 @@
 .header {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   display: flex;
   align-items: center;
   background-color: var(--color-white);
   padding: 1rem 4rem;
   z-index: 1000;
-  box-sizing: border-box;
+
   &__bg {
     background-color: transparent;
   }
@@ -22,7 +22,7 @@
     text-decoration: none;
     text-transform: uppercase;
     width: 60%;
-    margin: 2rem;
+    margin: 0 2rem;
     transition: all 0.3s ease-in-out;
 
     &__bg {
@@ -55,7 +55,7 @@
       background-color: transparent;
       color: var(--color-text);
       border: 0;
-      display: hidden;
+      display: none;
 
       &__bg {
         color: var(--color-white);
@@ -66,6 +66,8 @@
 
 @media (width <768px) {
   .header {
+    padding: 0;
+
     &__navbar {
       &__item {
         display: none;
